@@ -1,0 +1,30 @@
+//
+// color
+//
+
+// Main
+$color-primary: #a62947;
+$color-primary--dark: darken($color-primary, 10%);
+$color-primary--light: lighten($color-primary, 10%);
+
+$color-secondary: #118177;
+$color-secondary--dark: darken($color-secondary, 10%);
+$color-secondary--light: lighten($color-secondary, 10%);
+
+// Greyscale
+$color-white: #ffffff;
+$color-grey--1: darken(#ffffff,10%);
+$color-grey--2: darken(#ffffff,20%);
+$color-grey--3: darken(#ffffff,30%);
+$color-grey--4: darken(#ffffff,40%);
+$color-grey--5: darken(#ffffff,50%);
+$color-grey--6: darken(#ffffff,60%);
+$color-grey--7: darken(#ffffff,70%);
+$color-grey--8: darken(#ffffff,80%);
+$color-grey--9: darken(#ffffff,90%);
+$color-black: #000000;
+
+// Status
+$color-alert: #db9f19;
+$color-error: #ef5555;
+$color-success: #3cbe58;
