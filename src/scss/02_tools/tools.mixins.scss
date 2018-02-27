@@ -28,18 +28,18 @@
   opacity: 1;
 }
 
-@mixin fade-out ( $direction: 'down', $distance: $spacing-unit ) {
+@mixin fade-out ( $direction: 'down', $distance: $global-spacing-unit ) {
   @if ( $direction == 'up' ) {
-    transform: translateX( #{$distance*-1} )
+    transform: translateX( #{$distance*-1} );
     opacity: 0;
   }@elseif( $direction == 'down' ){
-    transform: translateX( #{$distance} )
+    transform: translateX( #{$distance} );
     opacity: 0;
   }@elseif( $direction == 'left' ){
-    transform: translateY( #{$distance*-1} )
+    transform: translateY( #{$distance*-1} );
     opacity: 0;
   }@elseif( $direction == 'right' ){
-    transform: translateY( #{$distance} )
+    transform: translateY( #{$distance} );
     opacity: 0;
   }
 }
@@ -61,7 +61,43 @@
   }@else {
     @error "`#{$font-size}` needs to be a number.";
   }
+@mixin font-face( $type: 'regular', $type : 'main' ) {
 
+  @if( $type == 'main' ) {
+
+    font-family: #{$font-main}, sans-serif;
+
+    @if( $type == 'regular') {
+
+      font-weight: 400;
+
+    }@elseif( $type == 'regular-italic' ){
+
+      font-weight: 400;
+      font-style: italic;
+
+    }@elseif( $type == 'bold' ){
+
+      font-weight: 500;
+
+    }@elseif( $type == 'bold-italic' ){
+
+      font-weight: 500;
+      font-style: italic;
+
+    }
+
+  }@elseif( $type == 'monospace' ){
+
+    font-family: #{$font-monospace}, monospace;
+    font-weight: 400;
+
+  }@else{
+
+    @error "'#{$type}' value is not supported in mixin 'font-face()'. Please select between 'main' (default) or 'monospace'. ";
+
+  }
+}
   // Sets $important option
   @if ( $important == true ){
     $important: !important;
@@ -103,4 +139,41 @@
 
   }
 
+}
+
+// Font-face
+
+@mixin font-face( $type: 'regular' ) {
+
+  @if( $type == 'regular') {
+    font-family: #{$font-main}, sans-serif;
+    font-weight: 400;
+  }
+
+  @elseif( $type == 'regular-italic' ){
+    font-family: #{$font-main}, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @elseif( type == 'bold' ){
+    font-family: #{$font-main}, sans-serif;
+    font-weight: 500;
+
+  }
+
+  @elseif( $type == 'bold-italic' ){
+    font-family: #{$font-main}, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  @elseif( $type == 'monospace' ){
+    font-family: #{$font-monospace}, monospace;
+    font-weight: 400;
+  }
+
+  @else{
+    @error "Invalid argument: `#{$type}` is not a valid value for `$type`."
+  }
 }

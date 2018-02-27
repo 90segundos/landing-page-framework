@@ -1,0 +1,47 @@
+//
+// Mobile navigation
+//
+
+/**
+* Hidden by default
+*/
+
+//
+// variables
+
+$mobile-navigation__link-color: $color-grey--6;
+$mobile-navigation__link-color--hover: $color-grey--8;
+
+// style
+.c-mobile-navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  transition: $global-transition;
+  @include fade-out();
+
+  &.active {
+    @include fade-in();
+  }
+}
+
+.c-mobile-navigation__list {
+}
+
+.c-mobile-navigation__item {
+  transition: $global-transition;
+  list-style-type: none;
+
+  &:hover {
+    .c-mobile-navigation__link {
+      color: $mobile-navigation__link-color--hover;
+    }
+  }
+}
+
+.c-mobile-navigation__link {
+  display: block;
+  color: $mobile-navigation__link-color;
+  text-decoration: none;
+}

@@ -20,4 +20,5 @@ html {
   line-height: $global-line-height / $global-font-size; /* [1] */
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
+  @include font-face('regular');
 }

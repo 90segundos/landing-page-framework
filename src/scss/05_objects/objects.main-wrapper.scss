@@ -1,0 +1,16 @@
+//
+// Main-wrapper
+// m
+
+// variables
+
+$main-wrapper-width: 85%;
+$main-wrapper-max-width: 1080px;
+
+// style
+
+.o-main-wrapper {
+  width: $main-wrapper-width;
+  max-width: $main-wrapper-max-width;
+  margin: auto;
+}

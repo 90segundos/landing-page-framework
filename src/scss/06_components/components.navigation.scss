@@ -1,0 +1,37 @@
+//
+// Components navigation
+//
+
+//
+// variables
+
+$navigation__link-color: $color-grey--6;
+$navigation__link-color--hover: $color-grey--8;
+
+// style
+.c-navigation {
+  display: inline-block;
+  transition: $global-transition;
+}
+
+.c-navigation__list {
+
+}
+
+.c-navigation__item {
+  display: inline-block;
+  transition: $global-transition;
+  list-style-type: none;
+
+  &:hover {
+    .c-navigation__link {
+      color: $navigation__link-color--hover;
+    }
+  }
+}
+
+.c-navigation__link {
+  display: block;
+  color: $navigation__link-color;
+  text-decoration: none;
+}
