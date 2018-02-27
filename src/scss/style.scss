@@ -5,6 +5,7 @@
 //
 
 // Settings
+@import '01_settings/settings.core';
 @import '01_settings/settings.global';
 @import '01_settings/settings.color';
 
@@ -12,6 +13,9 @@
 @import '02_tools/tools.mixins';
 
 // Generic
+@import '03_generic/generic.box-sizing';
+@import '03_generic/generic.normalize';
+@import '03_generic/generic.reset';
 
 // Elements
 
