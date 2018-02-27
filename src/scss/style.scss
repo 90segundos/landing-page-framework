@@ -4,6 +4,19 @@
 // Main stylesheet
 //
 
-body {
-  background-color: blue;
-}
+// Settings
+@import '01_settings/settings.global';
+@import '01_settings/settings.color';
+
+// Tools
+@import '02_tools/tools.mixins';
+
+// Generic
+
+// Elements
+
+// Objects
+
+// Components
+
+// Utilities
