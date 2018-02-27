@@ -4,9 +4,103 @@
 
 //
 //  Media queries
-//
+
 @mixin media-breakpoint-up($breakpoint) {
   @media (min-width: #{map-get($breakpoints,$breakpoint)}){
     @content;
   }
+}
+
+//
+// Clearfix
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+//
+// Animation
+@mixin fade-in () {
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+@mixin fade-out ( $direction: 'down', $distance: $spacing-unit ) {
+  @if ( $direction == 'up' ) {
+    transform: translateX( #{$distance*-1} )
+    opacity: 0;
+  }@elseif( $direction == 'down' ){
+    transform: translateX( #{$distance} )
+    opacity: 0;
+  }@elseif( $direction == 'left' ){
+    transform: translateY( #{$distance*-1} )
+    opacity: 0;
+  }@elseif( $direction == 'right' ){
+    transform: translateY( #{$distance} )
+    opacity: 0;
+  }
+}
+
+//
+// Font size
+
+@mixin font-size( $font-size, $line-height: auto, $modifier: 0, $important: false  ) {
+
+  /**
+  * Font size
+  */
+
+  // validate values
+  @if( type-of( $font-size == number ) ) {
+    @if ( unit( $font-size ) != "px") {
+      @error "`#{$font-size}` needs to be a pixel value.";
+    }
+  }@else {
+    @error "`#{$font-size}` needs to be a number.";
+  }
+
+  // Sets $important option
+  @if ( $important == true ){
+    $important: !important;
+  }@elseif( $important == false ) {
+    $important: null;
+  }@else {
+    @error "`#{$important}` needs to be `true` or `false`.";
+  }
+
+  // We provide a `px` fallback for old IEs not supporting `rem` values.
+  font-size: $font-size $important;
+  font-size: ($font-size / $global-font-size) * 1rem $important;
+
+  /**
+  * Line height
+  */
+
+  @if ($line-height == "auto") {
+
+    // Define how many grid lines each text line should span.
+    // By default, we set it to the minimum number of lines necessary
+    // in order to contain the defined font-size, +1 for some breathing room.
+    // This can be modified with the `$modifier` parameter.
+    $lines: ceil($font-size / $global-baseline) + $modifier + 1;
+    $line-height: $lines * $global-baseline;
+
+    line-height: ($line-height / $font-size);
+  }
+
+  @else {
+
+    @if (type-of($line-height) == number or $line-height == "inherit" or $line-height == "normal") {
+      line-height: $line-height $important;
+    }
+
+    @else if ($line-height != 'none' and $line-height != false) {
+      @error "D’oh! `#{$line-height}` is not a valid value for `$line-height`."
+    }
+
+  }
+
 }

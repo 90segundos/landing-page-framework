@@ -10,20 +10,23 @@
 
 /**
 * Mobile first
-* Below 576px, default values apply.
+* Below 600px, default values apply.
 */
 
 $breakpoints : (
-  'xs': 480px,
-  'sm': 576px,
-  'md': 768px,
-  'lg': 992px,
-  'xl': 1200px,
+  'xs': 320px,
+  'sm': 600px,
+  'md': 900px,
+  'lg': 1200px,
+  'xl': 1800px
 );
 
+/**
+* Standardise some UI treatments.
+*/
 
-
-// Standardise some UI treatments.
-
+// Border radius
 $global-radius: 3px !default;
+
+// Transitions
 $global-transition: all 300ms ease-in-out !default;

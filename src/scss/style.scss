@@ -4,28 +4,66 @@
 // Main stylesheet
 //
 
+//
 // Settings
+
+/**
+* Global variables, site-wide settings, config switches, etc.
+*/
+
 @import '01_settings/settings.core';
 @import '01_settings/settings.global';
 @import '01_settings/settings.color';
 
+//
 // Tools
+
+/**
+* Site-wide mixins and functions.
+*/
+
 @import '02_tools/tools.mixins';
 
+//
 // Generic
+
+/**
+* Low-specificity, far-reaching rulesets (e.g. resets).
+*/
+
 @import '03_generic/generic.box-sizing';
 @import '03_generic/generic.normalize';
 @import '03_generic/generic.reset';
 
+//
 // Elements
 
+/**
+* Unclassed HTML elements
+*/
+
+@import '04_elements/elements.page.scss';
+@import '04_elements/elements.headings.scss';
+@import '04_elements/elements.images.scss';
+
+//
 // Objects
 
+/**
+* Objects, abstractions, and design patterns (e.g. .o-layout {})
+*/
+
+//
 // Components
+
+/**
+* Discrete, complete chunks of UI (e.g. .c-carousel {}).
+*/
+
 
 // Utilities
 
-
-.title {
-  color: $color-grey--5;
-}
+/**
+* High-specificity, very explicit selectors.
+* Overrides and helper classes (e.g. .u-hidden {}).
+*/
