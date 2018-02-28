@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" id="svg2" viewBox="0 0 80.000001 80.000001" height="80" width="80" inkscape:version="0.91 r13725" sodipodi:docname="logo.svg">
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1280" inkscape:window-height="776" id="namedview4228" showgrid="false" inkscape:zoom="7.4875" inkscape:cx="40" inkscape:cy="40" inkscape:window-x="0" inkscape:window-y="24" inkscape:window-maximized="1" inkscape:current-layer="svg2" />
+  <defs id="defs4">
+    <filter id="filter4544" style="color-interpolation-filters:sRGB;">
+      <feColorMatrix id="feColorMatrix4546" result="color1" values="308" type="hueRotate" />
+      <feColorMatrix id="feColorMatrix4548" result="color2" values="0.98" type="saturate" />
+    </filter>
+    <filter id="filter4550" style="color-interpolation-filters:sRGB;">
+      <feColorMatrix id="feColorMatrix4552" result="color1" values="308" type="hueRotate" />
+      <feColorMatrix id="feColorMatrix4554" result="color2" values="0.98" type="saturate" />
+    </filter>
+    <filter id="filter4556" style="color-interpolation-filters:sRGB;">
+      <feColorMatrix id="feColorMatrix4558" result="color1" values="308" type="hueRotate" />
+      <feColorMatrix id="feColorMatrix4560" result="color2" values="0.98" type="saturate" />
+    </filter>
+    <filter id="filter4707" style="color-interpolation-filters:sRGB;">
+      <feColorMatrix id="feColorMatrix4709" result="color1" values="40" type="hueRotate" />
+      <feColorMatrix id="feColorMatrix4711" result="fbSourceGraphic" values="0.98" type="saturate" />
+      <feColorMatrix id="feColorMatrix4713" values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0" in="fbSourceGraphic" result="fbSourceGraphicAlpha" />
+      <feColorMatrix in="fbSourceGraphic" result="color1" values="40" type="hueRotate" id="feColorMatrix4715" />
+      <feColorMatrix result="fbSourceGraphic" values="0.98" type="saturate" id="feColorMatrix4717" />
+      <feColorMatrix id="feColorMatrix4719" values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0" in="fbSourceGraphic" result="fbSourceGraphicAlpha" />
+      <feColorMatrix in="fbSourceGraphic" result="color1" values="40" type="hueRotate" id="feColorMatrix4721" />
+      <feColorMatrix result="color2" values="0.98" type="saturate" id="feColorMatrix4723" />
+    </filter>
+    <filter style="color-interpolation-filters:sRGB;" inkscape:label="Color Shift" id="filter4278">
+      <feColorMatrix type="hueRotate" values="309" result="color1" id="feColorMatrix4280" />
+      <feColorMatrix type="saturate" values="0.98" result="color2" id="feColorMatrix4282" />
+    </filter>
+  </defs>
+  <metadata id="metadata7">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g transform="translate(0,-972.36214)" id="layer1" style="filter:url(#filter4278)">
+    <g style="filter:url(#filter4707)" id="g4615">
+      <path style="opacity:1;fill:#37c871;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4544)" id="path4146" d="m 39.885507,1044.8219 -32.3088935,-55.96068 64.6177835,0 z" />
+      <path style="opacity:1;fill:#2ca05a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4556)" id="path4146-8" d="m 39.885506,1030.5318 -19.933321,-34.52554 39.86664,0 z" />
+      <path style="opacity:1;fill:#217844;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4550)" id="path4146-8-1" d="m 39.885506,1016.423 -7.714757,-13.3623 15.429513,0 z" />
+    </g>
+  </g>
+</svg>

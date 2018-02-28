@@ -25,25 +25,19 @@ $layout-gutters: $global-spacing-unit;
   display: flex;
   flex-wrap: wrap;
 
-  &--vertical {
-    flex-flow: column;
+  &--space-between {
+    justify-content: space-between;
   }
-  &--vertical-center {
-    flex-flow: column;
-    justify-content: center;
-  }
-  &--center-all {
-    align-items: center;
-    justify-content: center;
-  }
-  &--horizontal-center {
-    align-content: center;
+
+  &--space-around {
+    justify-content: space-around;
   }
 }
 
 // columns
 .o-col {
   padding: 0 $layout-gutters;
+  flex-grow: 1;
 }
 
 $i : $layout-columns;
@@ -52,6 +46,7 @@ $i : $layout-columns;
 
   .o-col--#{$i} {
     width: 100%;
+    flex-grow: 0;
 
     @include media-breakpoint-up(sm) {
       width: #{(100% / $layout-columns * $i)};
