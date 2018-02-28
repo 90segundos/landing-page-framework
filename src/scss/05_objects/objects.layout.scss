@@ -10,12 +10,17 @@
 // variables
 
 $layout-columns: 12;
-$layout-gutters: $global-spacing-unit;
+$layout-gutters: $global-spacing-unit-sm;
 
 //
 // style
 
+// container
 
+.o-container {
+  position: relative;
+  padding: 0 $layout-gutters;
+}
 
 // row
 .o-row {
@@ -24,6 +29,13 @@ $layout-gutters: $global-spacing-unit;
   margin-right: -$layout-gutters;
   display: flex;
   flex-wrap: wrap;
+  overflow-x: hidden;
+
+  &--no-gutters {
+    & .o-col {
+      padding: 0 0;
+    }
+  }
 
   &--space-between {
     justify-content: space-between;

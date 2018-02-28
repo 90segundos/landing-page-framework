@@ -10,8 +10,29 @@ $navigation__link-color--hover: $color-grey--8;
 
 // style
 .c-navigation {
-  display: inline-block;
+
+  @each $breakpoint, $height in $global-header-heights {
+    @if( $breakpoint == 'xs' ){
+      height: $height;
+    }
+
+    @else{
+      @include media-breakpoint-up($breakpoint) {
+        height: $height;
+      }
+    }
+  }
+
+  display: flex;
   transition: $global-transition;
+  align-items: center;
+
+  &--right {
+    justify-content: flex-end;
+  }
+  &--center {
+    justify-content: center;
+  }
 }
 
 .c-navigation__list {

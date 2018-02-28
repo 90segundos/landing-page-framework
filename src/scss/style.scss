@@ -65,6 +65,8 @@
 * Discrete, complete chunks of UI (e.g. .c-carousel {}).
 */
 
+@import '06_components/components.header';
+@import '06_components/components.logo';
 @import '06_components/components.navigation';
 @import '06_components/components.mobile-navigation';
 

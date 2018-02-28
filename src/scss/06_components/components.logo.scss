@@ -1,16 +1,20 @@
 //
-// Components Header
+// component logo
 //
+
 
 //
 // variables
 
-$header-background-color: $color-white;
 
+
+//
 // style
 
-.c-header {
-  background-color: $header-background-color;
+.c-logo {
+
+  display: flex;
+  align-items: center;
 
   @each $breakpoint, $height in $global-header-heights {
     @if( $breakpoint == 'xs' ){
@@ -23,5 +27,9 @@ $header-background-color: $color-white;
       }
     }
   }
+}
 
+.c-logo__img {
+  display: block;
+  max-width: 60px;
 }
