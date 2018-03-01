@@ -20,5 +20,8 @@ html {
   line-height: $global-line-height / $global-font-size; /* [1] */
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   @include font-face('regular');
+  color: $color-grey--8;
 }

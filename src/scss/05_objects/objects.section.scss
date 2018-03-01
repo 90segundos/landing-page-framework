@@ -1,0 +1,17 @@
+//
+// object section
+//
+
+
+//
+// variables
+
+$section-padding: $global-spacing-unit;
+
+//
+// style
+
+.o-section {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}

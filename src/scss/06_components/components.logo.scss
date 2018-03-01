@@ -15,6 +15,7 @@
 
   display: flex;
   align-items: center;
+  overflow-y: hidden;
 
   @each $breakpoint, $height in $global-header-heights {
     @if( $breakpoint == 'xs' ){
@@ -31,5 +32,6 @@
 
 .c-logo__img {
   display: block;
-  max-width: 60px;
+  width: 170px;
+  height: auto;
 }

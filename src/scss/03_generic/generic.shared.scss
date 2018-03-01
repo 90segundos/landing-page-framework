@@ -19,7 +19,7 @@ figure,
 hr,
 table,
 fieldset {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $global-spacing-unit;
 }
 
 
@@ -29,5 +29,5 @@ fieldset {
  */
 
 dd, ol, ul {
-  margin-left: $spacing-unit;
+  margin-left: $global-spacing-unit;
 }

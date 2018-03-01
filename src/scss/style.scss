@@ -35,6 +35,7 @@
 @import '03_generic/generic.normalize';
 @import '03_generic/generic.reset';
 @import '03_generic/generic.fonts';
+@import '03_generic/generic.shared';
 
 //
 // Elements
@@ -57,6 +58,7 @@
 @import '05_objects/objects.main-background';
 @import '05_objects/objects.main-wrapper';
 @import '05_objects/objects.layout';
+@import '05_objects/objects.section';
 
 //
 // Components
@@ -69,6 +71,7 @@
 @import '06_components/components.logo';
 @import '06_components/components.navigation';
 @import '06_components/components.mobile-navigation';
+@import '06_components/components.main-content';
 
 
 // Utilities

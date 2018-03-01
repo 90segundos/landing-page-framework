@@ -61,43 +61,7 @@
   }@else {
     @error "`#{$font-size}` needs to be a number.";
   }
-@mixin font-face( $type: 'regular', $type : 'main' ) {
 
-  @if( $type == 'main' ) {
-
-    font-family: #{$font-main}, sans-serif;
-
-    @if( $type == 'regular') {
-
-      font-weight: 400;
-
-    }@elseif( $type == 'regular-italic' ){
-
-      font-weight: 400;
-      font-style: italic;
-
-    }@elseif( $type == 'bold' ){
-
-      font-weight: 500;
-
-    }@elseif( $type == 'bold-italic' ){
-
-      font-weight: 500;
-      font-style: italic;
-
-    }
-
-  }@elseif( $type == 'monospace' ){
-
-    font-family: #{$font-monospace}, monospace;
-    font-weight: 400;
-
-  }@else{
-
-    @error "'#{$type}' value is not supported in mixin 'font-face()'. Please select between 'main' (default) or 'monospace'. ";
-
-  }
-}
   // Sets $important option
   @if ( $important == true ){
     $important: !important;
@@ -143,32 +107,31 @@
 
 // Font-face
 
-@mixin font-face( $type: 'regular' ) {
+@mixin font-face( $type: "regular" ) {
 
-  @if( $type == 'regular') {
+  @if( $type == "regular" ) {
     font-family: #{$font-main}, sans-serif;
     font-weight: 400;
   }
 
-  @elseif( $type == 'regular-italic' ){
+  @elseif( $type == "regular-italic" ){
     font-family: #{$font-main}, sans-serif;
     font-weight: 400;
     font-style: italic;
   }
 
-  @elseif( type == 'bold' ){
+  @elseif( type == "bold" ){
     font-family: #{$font-main}, sans-serif;
     font-weight: 500;
-
   }
 
-  @elseif( $type == 'bold-italic' ){
+  @elseif( $type == "bold-italic" ){
     font-family: #{$font-main}, sans-serif;
     font-weight: 500;
     font-style: italic;
   }
 
-  @elseif( $type == 'monospace' ){
+  @elseif( $type == "monospace" ){
     font-family: #{$font-monospace}, monospace;
     font-weight: 400;
   }
