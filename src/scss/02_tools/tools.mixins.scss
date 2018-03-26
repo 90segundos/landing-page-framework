@@ -11,6 +11,12 @@
   }
 }
 
+@mixin media-breakpoint-down($breakpoint) {
+  @media (max-width: #{map-get($breakpoints,$breakpoint)-1}){
+    @content;
+  }
+}
+
 //
 // Clearfix
 @mixin clearfix {

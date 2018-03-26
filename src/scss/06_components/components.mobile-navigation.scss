@@ -45,3 +45,31 @@ $mobile-navigation__link-color--hover: $color-grey--8;
   color: $mobile-navigation__link-color;
   text-decoration: none;
 }
+
+.c-mobile-navigation-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  @include media-breakpoint-up($global-mobile-navigation-breakpoint) {
+    display: none;
+  }
+  @each $breakpoint, $height in $global-header-heights {
+
+    @if( $breakpoint == 'xs' ){
+      height: $height;
+    }
+
+    @else{
+      @include media-breakpoint-up($breakpoint) {
+        height: $height;
+      }
+    }
+  }
+}
+.c-mobile-navigation-toggle__icon {
+  cursor: pointer;
+  path {
+    fill: $color-grey--8;
+  }
+
+}

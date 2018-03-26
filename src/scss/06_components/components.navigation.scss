@@ -11,7 +11,11 @@ $navigation__link-color--hover: $color-grey--8;
 // style
 .c-navigation {
 
+  transition: $global-transition;
+  display: none;
+
   @each $breakpoint, $height in $global-header-heights {
+
     @if( $breakpoint == 'xs' ){
       height: $height;
     }
@@ -21,11 +25,11 @@ $navigation__link-color--hover: $color-grey--8;
         height: $height;
       }
     }
+    @include media-breakpoint-up('sm'){
+      display: flex;
+      align-items: center;
+    }
   }
-
-  display: flex;
-  transition: $global-transition;
-  align-items: center;
 
   &--right {
     justify-content: flex-end;
